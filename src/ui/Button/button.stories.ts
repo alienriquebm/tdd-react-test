@@ -14,8 +14,30 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Normal: Story = {
+export const DefaultPrimary: Story = {
   args: {
-    label: 'Click me',
+    children: 'Click me',
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    children: 'Click me',
+    variant: 'secondary',
+  },
+};
+
+export const DisabledPrimary: Story = {
+  args: {
+    children: 'Click me',
+    disabled: true,
+  },
+};
+
+export const DisabledSecondary: Story = {
+  args: {
+    children: 'Click me',
+    disabled: true,
+    variant: 'secondary',
   },
 };
